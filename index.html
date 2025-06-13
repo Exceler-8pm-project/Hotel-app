@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>OceanView Hotel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>OceanView Hotel</h1>
+    <nav>
+      <a href="#booking">Book Room</a>
+      <a href="#restaurant">Restaurant</a>
+      <a href="#packages">Tour Packages</a>
+      <a href="#map">Location</a>
+      <a href="#feedback">Feedback</a>
+    </nav>
+  </header>
+
+  <!-- Room Gallery Section -->
+  <section id="rooms">
+    <h2>Our Rooms</h2>
+    <div class="room-gallery">
+      <div class="room-card">
+        <img src="images/img.avif" alt="Hotel Exterior" />
+        <p>Our Beautiful Hotel</p>
+      </div>
+      <div class="room-card">
+        <img src="images/img2.avif" alt="Deluxe Room" />
+        <p>Deluxe Room</p>
+      </div>
+      <div class="room-card">
+        <img src="images/img3.avif" alt="Suite Room" />
+        <p>Luxury Suite</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section -->
+  <section id="booking">
+    <h2>Book a Room</h2>
+    <form id="bookingForm">
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="date" required />
+      <select required>
+        <option value="">Select Room</option>
+        <option value="deluxe">Deluxe</option>
+        <option value="suite">Suite</option>
+      </select>
+      <button type="submit">Book Now</button>
+    </form>
+    <p id="bookingMsg" class="hidden">Your booking request has been submitted!</p>
+  </section>
+
+  <!-- Restaurant Section -->
+  <section id="restaurant">
+    <h2>Restaurant Reservation</h2>
+    <form id="restaurantForm">
+      <input type="text" placeholder="Name" required />
+      <input type="date" required />
+      <input type="time" required />
+      <input type="number" placeholder="Number of Guests" required />
+      <button type="submit">Reserve Table</button>
+    </form>
+    <p id="restaurantMsg" class="hidden">Table reserved successfully!</p>
+  </section>
+
+  <!-- Packages Section -->
+  <section id="packages">
+    <h2>Travel & Tour Packages</h2>
+    <ul class="package-list">
+      <li><strong>Beach Day Tour:</strong> ₹999 - includes lunch & transport</li>
+      <li><strong>City Excursion:</strong> ₹1499 - guided heritage walk</li>
+      <li><strong>Jungle Safari:</strong> ₹1999 - full day adventure</li>
+    </ul>
+  </section>
+
+  <!-- Location Section -->
+  <section id="map">
+    <h2>Find Us</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19598.267130566716!2d77.5946!3d12.9716!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670b13a5a3f%3A0x9c580cafb4f0babc!2sBangalore!5e0!3m2!1sen!2sin!4v1600000000000"
+      width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+    </iframe>
+  </section>
+
+  <!-- Feedback Section -->
+  <section id="feedback">
+    <h2>Customer Feedback</h2>
+    <form id="feedbackForm">
+      <input type="text" placeholder="Your Name" required />
+      <textarea placeholder="Your Feedback" required></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+    <p id="feedbackMsg" class="hidden">Thanks for your feedback!</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 OceanView Hospitality. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
