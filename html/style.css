@@ -1,0 +1,87 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #f0f0f0;
+}
+
+header {
+  background: #0077b6;
+  color: white;
+  padding: 1em;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+section {
+  padding: 2em;
+  background: white;
+  margin: 1em;
+  border-radius: 8px;
+}
+
+.room-gallery {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.room-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1em;
+  width: 300px;
+}
+
+form input, form select, form textarea, form button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0.7em;
+}
+
+form button {
+  background: #0077b6;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+.package-list li {
+  padding: 0.5em 0;
+}
+
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 1em;
+}
+.room-gallery {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.room-card {
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.room-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
